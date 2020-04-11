@@ -2,9 +2,9 @@ package com.yinxin.day01;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
-    private  int age;
+    private int age;
 
     public Person(String name, int age) {
         this.name = name;
@@ -20,7 +20,8 @@ public class Person {
     }
 
     /**
-     *  重写hasCode 和 equals 方法告诉set怎么区别这个对象 的两个实例是否是同一个 这边判断如果名字和年龄一样这认为是同一个人
+     * 重写hasCode 和 equals 方法告诉set怎么区别这个对象 的两个实例是否是同一个 这边判断如果名字和年龄一样这认为是同一个人
+     *
      * @param o
      * @return
      */
@@ -52,5 +53,10 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return age - o.getAge();
     }
 }
