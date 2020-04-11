@@ -12,8 +12,11 @@ public class ListDemo {
         listTest.add("dadada");
         System.out.println(listTest);
         listTest.remove(1);
-        listTest.remove("heheda");
+        listTest.add(1,"xxxxx");
         System.out.println(listTest);
 
+        boolean isOk = listTest.remove("heheda");
+        System.out.println(isOk);
+        System.out.println(listTest);
     }
 }
