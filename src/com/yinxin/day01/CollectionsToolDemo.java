@@ -45,8 +45,10 @@ public class CollectionsToolDemo {
 		 * 将intArray 降序排序
 		 */
 		Collections.sort(intArray, (o1, o2) -> o2 - o1); // lambda表达式
-
 		System.out.println("intArray 降序排序===>" + intArray);
-
+		Collections.addAll(intArray, 2,3,45);
+		System.out.println("最终结果"+intArray);
+		Collections.sort(intArray);
+		System.out.println(intArray);
 	}
 }
