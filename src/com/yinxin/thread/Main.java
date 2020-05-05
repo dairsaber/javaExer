@@ -28,6 +28,7 @@ public class Main {
                 }
             }
         }).start();
+        //主线程
         for (int i = 0; i < 20; i++) {
             System.out.println(Thread.currentThread().getName());
             System.out.println("main==>" + i);

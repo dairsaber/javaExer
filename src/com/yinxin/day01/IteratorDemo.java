@@ -3,7 +3,6 @@ package com.yinxin.day01;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.Scanner;
 
 public class IteratorDemo {
 	public static void main(String[] args) {
